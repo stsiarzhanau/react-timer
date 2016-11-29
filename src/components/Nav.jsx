@@ -17,7 +17,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="/"
+              to="/countdown"
               activeClassName="active-link"
             >
             Countdown
