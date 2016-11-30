@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
-export default class Clock extends Component {
+const propTypes = {
+  totalSeconds: React.PropTypes.number,
+};
+
+const defaultProps = {
+  totalSeconds: 0,
+};
+
+class Clock extends Component {
   formatSeconds(totalSeconds) {
     let seconds = totalSeconds % 60;
     let minutes = Math.floor(totalSeconds / 60);
@@ -26,10 +34,7 @@ export default class Clock extends Component {
   }
 }
 
-Clock.defaultProps = {
-  totalSeconds: 0,
-};
+Clock.propTypes = propTypes;
+Clock.defaultProps = defaultProps;
 
-Clock.propTypes = {
-  totalSeconds: React.PropTypes.number,
-};
+export default Clock;

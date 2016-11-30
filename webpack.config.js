@@ -60,6 +60,7 @@ module.exports = {
       Timer: 'src/components/Timer.jsx',
       Countdown: 'src/components/Countdown.jsx',
       Clock: 'src/components/Clock.jsx',
+      CountdownForm: 'src/components/CountdownForm.jsx',
       appStyles: 'src/styles/app.scss',
     },
     root: __dirname,

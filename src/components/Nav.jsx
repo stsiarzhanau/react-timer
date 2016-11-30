@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-export default function Nav() {
+function Nav() {
   return (
     <div className="top-bar">
       <div className="top-bar-left">
@@ -35,3 +35,5 @@ export default function Nav() {
     </div>
   );
 }
+
+export default Nav;
