@@ -48,7 +48,7 @@ class Countdown extends Component {
       });
 
       if (newCount === 0) {
-        this.setState ({ countdownStatus: 'stopped' });
+        this.setState({ countdownStatus: 'stopped' });
       }
     }, 1000);
   }
@@ -81,6 +81,7 @@ class Countdown extends Component {
 
     return (
       <div>
+        <h1 className="page-title">Countdown App</h1>
         <Clock totalSeconds={count} />
         {renderControls()}
       </div>

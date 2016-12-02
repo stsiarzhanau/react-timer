@@ -26828,6 +26828,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'page-title' },
+	          'Countdown App'
+	        ),
 	        _react2.default.createElement(_Clock2.default, { totalSeconds: count }),
 	        renderControls()
 	      );
@@ -27416,7 +27421,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".top-bar, .top-bar ul {\n  background-color: #333333; }\n\n.top-bar .menu-text {\n  color: #fff; }\n\n.menu > .menu-text > a {\n  display: inline-block;\n  padding: 0; }\n\n.active-link {\n  font-weight: 700; }\n\n.clock {\n  display: flex;\n  width: 14rem;\n  height: 14rem;\n  justify-content: center;\n  align-items: center;\n  background-color: #b5d0e2;\n  border: 2px solid #2099e8;\n  border-radius: 50%;\n  margin: 4rem auto; }\n\n.clock-text {\n  color: #fff;\n  font-size: 2.25rem;\n  font-weight: 400; }\n\n.controls {\n  display: flex;\n  justify-content: center; }\n\n.button {\n  padding: .75rem 3rem; }\n\n.button:first-child {\n  margin-right: 1.5rem; }\n", ""]);
+	exports.push([module.id, ".top-bar, .top-bar ul {\n  background-color: #333333; }\n\n.top-bar .menu-text {\n  color: #fff; }\n\n.menu > .menu-text > a {\n  display: inline-block;\n  padding: 0; }\n\n.active-link {\n  font-weight: 700; }\n\n.clock {\n  display: flex;\n  width: 14rem;\n  height: 14rem;\n  justify-content: center;\n  align-items: center;\n  background-color: #b5d0e2;\n  border: 2px solid #2099e8;\n  border-radius: 50%;\n  margin: 4rem auto; }\n\n.clock-text {\n  color: #fff;\n  font-size: 2.25rem;\n  font-weight: 400; }\n\n.controls {\n  display: flex;\n  justify-content: center; }\n\n.button {\n  padding: .75rem 3rem; }\n\n.button:first-child {\n  margin-right: 1.5rem; }\n\n.page-title {\n  margin: 2rem 0;\n  text-align: center; }\n", ""]);
 	
 	// exports
 
