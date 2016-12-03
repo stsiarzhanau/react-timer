@@ -16,9 +16,10 @@ class Controls extends Component {
       this.props.onStatusChange(newStatus);
     };
   }
+
   render() {
     const { countdownStatus } = this.props;
-    const renderStarStopButton = () => {
+    const renderStartStopButton = () => {
       if (countdownStatus === 'started') {
         return (
           <button
@@ -28,22 +29,20 @@ class Controls extends Component {
           Pause
           </button>
         );
-      } else if (countdownStatus === 'paused') {
-        return (
-          <button
-            className="primary button"
-            onClick={this.onStatusChange('started')}
-          >
-          Start
-          </button>
-        );
       }
-      return undefined;
+      return (
+        <button
+          className="primary button"
+          onClick={this.onStatusChange('started')}
+        >
+        Start
+        </button>
+      );
     };
 
     return (
       <div className="controls">
-        {renderStarStopButton()}
+        {renderStartStopButton()}
         <button
           className="alert hollow button"
           onClick={this.onStatusChange('stopped')}
